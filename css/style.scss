@@ -10,9 +10,12 @@ body {
     height: 100%;
     line-height: 24px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
+    color: #515151;
 }
 a{
+    border-bottom: 1px solid $accent-color;
+    text-decoration: none;
     color: $link-color;
     @include trans(0.3);
 }
@@ -20,10 +23,12 @@ a:hover{
     text-decoration: none;
 
 }
-
-
+section p{
+    padding: 13px 0;
+}
 .logo{
     a{
+        border-bottom: none;
         img{}
     }
     .slogan{
@@ -40,6 +45,24 @@ a:hover{
         }
     }
 }
+.social{
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            display: inline-block;
+            margin: 0 5px;
+            a{
+                border-bottom: none;
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
 .main-menu{
     margin-bottom: -35px;
     nav{
@@ -49,11 +72,13 @@ a:hover{
                 display: inline-block;
                 margin: 0 20px;
                 a{
+                    border-bottom: none;
                     text-transform: uppercase;
                     color: #474747;
+                    font-weight: 300;
                 }
                 &:hover a, &.active a{
-                    border-bottom: 1px solid $link-color;
+                    border-bottom: 1px solid $accent-color;
                 }
                 &:last-child{
                     margin-right: 0;
@@ -66,5 +91,163 @@ header{
     border: 1px solid #C4C4C4;
     .header-flex{
         margin: 20px 15px;
+    }
+}
+#my_photo{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+.blog-catalog{
+    min-height: 745px;
+    position: relative;
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+    .oplet{
+        margin: 0 15px;
+    }
+    .img{
+        img{
+            border-radius: 3px;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            @include shadow();
+        }
+    }
+    .date{
+        margin-top: 15px;
+        span{
+            color: #3B71B2;
+            border-bottom: 3px solid #3B71B2;
+        }
+    }
+    .header{
+        margin-top: 25px;
+        h3{}
+    }
+    .anons{
+        border-top: 1px solid #C4C4C4;
+        margin-top: 15px;
+        padding-top: 30px;
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            color: #515151;
+        }
+    }
+    .btn-blog{
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+        button{
+
+        }
+    }
+}
+.work{
+    position: relative;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+    min-height: 815px;
+    .oplet{
+        margin: 0 15px;
+    }
+    .img{
+        img{
+            border-radius: 3px;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            @include shadow();
+        }
+    }
+    .link{
+        margin-top: 13px;
+    }
+    .header{
+        margin-top: 25px;
+    }
+    .desc{
+        border-top: 1px solid #C4C4C4;
+        margin-top: 15px;
+        padding-top: 30px;
+        p{}
+    }
+    .btn-portfolio{
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+
+    }
+}
+
+section{
+    &.banner{
+        min-height: 752px;
+        position: relative;
+        border-bottom: 1px solid #C4C4C4;
+        .utp{
+            margin-top: 147px;
+            .ttl-h1{
+                h1{
+                    font-size: 48px;
+                    line-height: 67px;
+                    font-weight: bold;
+                    color: $bk;
+                    span{
+                        display: block;
+                       letter-spacing: 0.02em; 
+                       &:last-child{
+                          letter-spacing: 0.005em;
+                       }
+                    }
+                }
+            }
+            .desc{
+                max-width: 420px;
+                margin-top: 76px;
+                p{
+                    font-size: 21px;
+                    line-height: 33px;
+                    color: #000000;
+                    font-weight: 300;
+                }
+            }
+            .social{
+                margin-top: 50px;
+            }
+        }
+    }
+    &.blog-index{
+        .blog-index-oplet{
+            .oplet{
+            }
+        }
+
+    }
+}
+footer{
+    margin-top: 50px;
+    border: 1px solid #DADADA;
+    .footer-flex{
+        margin: 20px 0;
+    }
+    .main-menu{
+        margin-bottom: -20px;
+        li{
+            margin: 0 10px !important;
+            a{
+                font-weight: 400 !important;
+                text-transform: none !important;
+            }
+        }
     }
 }

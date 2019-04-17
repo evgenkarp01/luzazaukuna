@@ -1,18 +1,18 @@
 $bg-color:rgba(10, 106, 160, 0.48);;
-$link-color: #FF6F61;
+$link-color: #3B71B2;
 $wt:#fff;
 $bk:#000;
 $dark:#ededed;
-$accent-color: #3B71B2;
+$accent-color: #FF6F61;
 $focus-color: $accent-color;
 $fz: rem(16);
 $h1-fz: 66;
-$h2-fz: 40;
+$h2-fz: 37;
 $h3-fz: 28;
 $h4-fz: 18;
 $h5-fz: 16;
 $h6-fz: 14;
-$btn-color: #ED1A23;
+$btn-color: #FF6F61;
 $placeholder-color: #fff;
 $bgcolor-form: #0083BA;
 $browser-context: 16; // Default
@@ -40,5 +40,5 @@ $medium: 500;
 $heavy: 800;
 $black: 900;
 $light: 300;
-$mt:110px;    /*margin top for HEADER h1-h6*/
-$mb:70px;     /*margin top for BLOCK from header*/
+$mt:100px;    /*margin top for HEADER h1-h6*/
+$mb:55px;     /*margin top for BLOCK from header*/

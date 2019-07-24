@@ -11,8 +11,11 @@
 	<link rel="shortcut icon"  href="favicon.ico">
 </head>
 <body>
-    <div class="wrapper oplet-all bg-wt">
-       <header class="">
+    <div class="wrapper oplet-bg" style="
+    background:url(img/molitsa-bg.jpg)no-repeat #4C8CAA;
+    background-size: cover;
+    background-position: center;">
+       <header>
            <div class="contain">
                <div class="flex flex-header">
                    <div class="logo">
@@ -228,13 +231,44 @@
                </div>
            </div>
        </header>
-        <div class="utp">
-            <h1>ПОСВЯЩАЕТСЯ НАШИМ ДЕТЯМ</h1>
-            <div class="txt">
-                <p>ИНОГДА ОСТАеТСЯ ТОЛЬКО МОЛИТЬСЯ, НО МЫ ВЫБИРАЕМ СОХРАНИТЬ НАШУ ПЛАНЕТУ И ОТПРАВИТЬСЯ ПОКОРЯТЬ КОСМОС.</p>
-            </div>
+        <div class="mt-ttl container">
+            <article class="mt-block">
+                <div class="ttl">
+                    <h1>Молиться</h1>
+                </div>
+                <div class="molitva mt-block flex">
+                    <div class="col-pol">
+                        <div class="ttl">
+                            <h3>Совместная молитва</h3>
+                        </div>
+                        <div class="desc">
+                            Разместите свою молитвенную просьбу и верьте, что Бог поможет, поскольку другие со всего мира молятся в согласии с вашей просьбой.
+                        </div>
+                        <form class="all">
+                            <input type="text" name="name_relig" placeholder="Имя">
+                            <input type="text" name="religia_relig" placeholder="Религия">
+                            <textarea name="message_relig" placeholder="Молитва"></textarea>
+                            <div class="btn"><button>Отправить</button></div>
+                        </form>
+                    </div>
+                    <div class="col-pol">
+                        <div class="ttl">
+                            <h3>Молитва услышана</h3>
+                        </div>
+                        <div class="desc">
+                            Если ваши молитвы были услышаны, опубликуйте свою историю ниже и поделитесь своим благословением с другими нуждающимися.
+                        </div>
+                        <form class="all">
+                            <input type="text" name="name_blago" placeholder="Имя">
+                            <input type="text" name="religia_blago" placeholder="Религия">
+                            <textarea name="message_blago" placeholder="Благословение"></textarea>
+                            <div class="btn"><button>Отправить</button></div>
+                        </form>
+                    </div>
+                </div>
+            </article>
         </div>
-    </div>  
+    </div> 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossorigin="anonymous"></script>
     <script src='https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js'></script>
